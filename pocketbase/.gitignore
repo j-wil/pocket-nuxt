@@ -1,0 +1,12 @@
+# Pocketbase files
+pb_data
+
+# Nuxt files
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
