@@ -10,9 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "nuxt": "3.0.0",
+    "primeflex": "3.2.1",
+    "primeicons": "5.0.0",
+    "primevue": "3.17.0"
   },
   "dependencies": {
-    "primevue": "^3.21.0"
+    "pocketbase": "^0.9.1"
   }
 }
