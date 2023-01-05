@@ -1,13 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "generate": "nuxt generate",
     "dev": "pm2-runtime start ecosystem.config.js",
     "dev:nuxt": "nuxt dev",
     "dev:pocketbase": "go run /pocketbase/main.go serve",
-    "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "build:prod": "nuxt generate && cp -R .output/ ./pocketbase && go build -o pocketnuxt pocketbase/main.go"
   },
   "devDependencies": {
     "nuxt": "3.0.0",

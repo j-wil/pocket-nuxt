@@ -1,14 +1,68 @@
+<div align="center">
+<img
+    width=40%
+    src="app/public/images/logos/pocketnuxt.svg"
+    alt="pocketnuxt logo"
+/>
+
+</div>
+
 # Pocket Nuxt
 
-Nuxt3 and PocketBase delivered in a simple binary.
+Nuxt3 and PocketBase delivered in a simple binary that can be run anywhere.
 
-- Nuxt3
+
+## Tech Stack
 - PocketBase
-- Typescript
-- Nuxt3 Auth
-- PrimeVue/PrimeIcons
-- Go 1.19
+- Nuxt3
+- PrimeVue
+- PrimeIcons
 
 
-# Dev Dependencies
-- PM2 (https://pm2.keymetrics.io/docs/usage/quick-start/)
+## Run Locally
+This will run both a Nuxt3 dev server with hot reload and a pocketbase instance with a authentication and an api ready to go.
+
+
+Clone the project
+
+```bash
+  git clone https://github.com/j-wil/pocket-nuxt
+```
+
+Go to the project directory
+
+```bash
+  cd pocket-nuxt
+```
+
+Install dependencies
+
+```bash
+  yarn install
+```
+
+Install pm2
+
+```bash
+  yarn global add pm2
+```
+
+Start the server
+
+```bash
+  yarn dev
+```
+
+
+## Deployment
+
+This will create a single binary containing Nuxt and PocketBase for deployment.
+
+```bash
+   build:prod
+```
+
+
+## Acknowledgements
+
+ - [PocketBase](https://github.com/pocketbase/pocketbase)

@@ -37,7 +37,7 @@ async function resetPassword() {
         
         <div class="surface-card p-4 shadow-2 border-round md:w-6 lg:w-3">
             <div class="text-center mb-5">
-                <img src="/images/logos/hyper.svg" alt="Image" height="50" class="mb-3">
+                <img src="/images/logos/pocketnuxt.svg" alt="Image" height="50" class="mb-3">
                 <div class="text-900 text-3xl font-medium mb-3">Reset Password</div>
                 <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer" href="/auth/login">Back to Login</a>
             </div>
