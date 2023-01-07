@@ -12,7 +12,7 @@
 Nuxt3 and PocketBase delivered in a simple binary that can be run anywhere.
 
 
-## Tech Stack
+## Stack
 - PocketBase
 - Nuxt3
 - PrimeVue
@@ -59,7 +59,7 @@ Start the server
 This will create a single binary containing Nuxt and PocketBase for deployment.
 
 ```bash
-   build:prod
+  yarn build:prod
 ```
 
 

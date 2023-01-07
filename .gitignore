@@ -3,8 +3,9 @@ node_modules
 .nuxt
 .nitro
 .cache
-.output
 .env
 dist
 .vscode
 pb_data
+build
+.output
