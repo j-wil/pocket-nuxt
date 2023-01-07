@@ -12,7 +12,7 @@
 Nuxt3 and PocketBase delivered in a simple binary that can be run anywhere.
 
 
-## Tech Stack
+## Stack
 - PocketBase
 - Nuxt3
 - PrimeVue

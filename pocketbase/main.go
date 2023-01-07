@@ -14,7 +14,6 @@ import (
 var public embed.FS
 
 func main() {
-
 	app := pocketbase.New()
 
 	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
