@@ -2,12 +2,20 @@
   "private": true,
   "scripts": {
     "generate": "nuxt generate",
+<<<<<<< HEAD
     "dev": "nuxt generate && cp -R .output ./pocketbase && pm2-runtime start ecosystem.config.js",
+=======
+    "dev": "nuxt generate build && cp -R build/.output/ ./pocketbase && pm2-runtime start ecosystem.config.js",
+>>>>>>> eb5de7fbf5363e747df0280f334e659697a49d7a
     "dev:nuxt": "nuxt dev",
     "dev:pocketbase": "go run /pocketbase/main.go serve",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+<<<<<<< HEAD
     "build:prod": "nuxt generate && cp -R .output ./pocketbase && go build -o pocketnuxt pocketbase/main.go"
+=======
+    "build:prod": "nuxt generate && cp -R build/.output/ ./pocketbase && go build -o pocketnuxt pocketbase/main.go"
+>>>>>>> eb5de7fbf5363e747df0280f334e659697a49d7a
   },
   "devDependencies": {
     "nuxt": "3.0.0",
