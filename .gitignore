@@ -7,9 +7,5 @@ node_modules
 dist
 .vscode
 pb_data
-<<<<<<< HEAD
-build
 .output
-=======
 build
->>>>>>> eb5de7fbf5363e747df0280f334e659697a49d7a
