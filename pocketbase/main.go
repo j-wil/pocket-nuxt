@@ -10,14 +10,14 @@ import (
 	"github.com/pocketbase/pocketbase/core"
 )
 
-//go:embed all:public
+//go:embed all:.output/public
 var public embed.FS
 
 func main() {
 	app := pocketbase.New()
 
 	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
-		e.Router.GET("/*", apis.StaticDirectoryHandler(echo.MustSubFS(public, "public"), true))
+		e.Router.GET("/*", apis.StaticDirectoryHandler(echo.MustSubFS(public, ".output/public"), true))
 		return nil
 	})
 
