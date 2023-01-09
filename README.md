@@ -15,6 +15,14 @@ This demo allows you to login and see pocketnuxt in action. This is hosted on a 
 
 Nuxt3 and PocketBase delivered in a simple binary that can run anywhere.
 
+This is achieved by compiling the Nuxt app into a static hosted folder and then using Go to serve the static files and pocketbase api.
+```go
+//go:embed all:.output/public
+var public embed.FS
+```
+Make it your own by extending [Pocketbase](https://pocketbase.io/docs/) and adding your app to the app folder.
+
+
 
 ## Stack
 - PocketBase
