@@ -53,12 +53,6 @@ Install dependencies
   yarn install
 ```
 
-Install pm2
-
-```bash
-  yarn global add pm2
-```
-
 Start the server
 
 ```bash

@@ -1,15 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "generate": "nuxt generate",
-    "dev": "nuxt generate && cp -R .output ./pocketbase && pm2-runtime start ecosystem.config.js",
+    "dev": "yarn generate && concurrently 'yarn:dev:*'",
+    "generate": "nuxt generate && cp -R .output ./pocketbase",
     "dev:nuxt": "nuxt dev",
-    "dev:pocketbase": "go run /pocketbase/main.go serve",
+    "dev:pocketbase": "go run pocketbase/main.go serve",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "build:prod": "nuxt generate && cp -R .output ./pocketbase && go build -o pocketnuxt pocketbase/main.go"
   },
   "devDependencies": {
+    "concurrently": "^7.4.0",
     "nuxt": "3.0.0",
     "primeflex": "3.2.1",
     "primeicons": "5.0.0",
