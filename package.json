@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "concurrently": "^7.4.0",
-    "nuxt": "3.0.0",
+    "nuxt": "3.4.3",
     "primeflex": "3.2.1",
     "primeicons": "5.0.0",
     "primevue": "3.17.0"
